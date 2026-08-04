@@ -1,4 +1,4 @@
-package Atividade1;
+package lab01.Atividade1;
 
 import java.util.ArrayList;
 

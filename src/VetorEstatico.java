@@ -1,5 +1,3 @@
-package vetor;
-
 public class VetorEstatico {
 
     private String[] elementos;
@@ -82,7 +80,7 @@ public class VetorEstatico {
             elementos[tamanho-1] = null;
             tamanho--;
         }else {
-            System.out.println("vetor vazio");
+            System.out.println("atividades.vetor vazio");
         }
     }
 

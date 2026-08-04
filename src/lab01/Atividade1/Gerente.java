@@ -1,4 +1,4 @@
-package Atividade1;
+package lab01.Atividade1;
 
 public class Gerente extends Funcionario {
 
