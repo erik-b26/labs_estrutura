@@ -1,0 +1,46 @@
+REBOOT — CORREÇÃO RÁPIDA DO JAVA NO LINUX
+
+O arquivo testar.sh atualizado seleciona automaticamente o Java 21 se existir:
+/usr/lib/jvm/java-21-openjdk-amd64/bin/java
+
+Não é necessário instalar nada nem usar sudo quando essa instalação contém
+um JDK funcional. A seleção vale somente durante a execução do script.
+
+COMO INICIAR
+1. Extraia todo o ZIP atualizado.
+2. Abra o terminal na pasta REBOOT_ALUNOS.
+3. Execute: sh testar.sh
+4. Abra relatorio.html no navegador; use F5 depois de cada nova execução.
+
+ERRO: Unrecognized option: -m
+Indica que a execução tentou usar uma opção não reconhecida pelo Java ativo.
+No laboratório, selecionar o Java 21 resolveu o problema. Se estiver usando
+uma cópia antiga do script, cole o bloco abaixo no terminal da pasta:
+
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
+export PATH="$JAVA_HOME/bin:$PATH"
+sh testar.sh
+
+O caminho deve existir nessa máquina. O bloco manual vale para o terminal
+atual; o script atualizado já faz essa seleção em cada execução.
+
+SE NÃO FUNCIONAR
+Execute e envie ao professor as saídas:
+java -version
+ls /usr/lib/jvm
+
+Escreva -version junto, sem espaço entre o hífen e a palavra.
+Se faltar o compilador, é necessário um JDK 17 ou superior, e não apenas o JRE.
+O script atualizado informa o problema antes de tentar compilar.
+
+O QUE É NORMAL
+13 / 30 testes aprovados: resultado inicial esperado. As outras falhas são
+propositais e devem ser resolvidas nos arquivos Java da atividade.
+
+ERRO DE COMPILAÇÃO DEPOIS DE EDITAR
+Confira a linha indicada, salve e execute novamente. O relatório antigo não
+é atualizado se a compilação falhar; confira o terminal e o horário do HTML.
+
+SE VOCÊ JÁ COMEÇOU A RESOLVER AS MISSÕES
+Substitua somente testar.sh e acrescente este arquivo de ajuda à sua pasta.
+Preserve seus arquivos Java e RESPOSTAS.md para não perder as correções.
