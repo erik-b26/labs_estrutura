@@ -37,11 +37,15 @@ Por que um processo volta ao fim? Por que preservar o array de entrada?
 Quem programou / quem testou / quem explicou:
 
 ## Fechamento individual (cada integrante responde)
-Nome:
+Nome:ÉRIK CRESTANIO BUENO 
 1. Tamanho e capacidade são a mesma coisa?
+2. não, tamanho é o que tem ocupado, capacidade é o que tem disponivel.
 2. A fila pode começar fisicamente no índice 2?
+3. se for fila circular sim, casocontrario não.
 3. O primeiro processo a chegar precisa terminar primeiro?
+4. depende, se for fila, sim, se for pilha, o ultimo a chegar, é o primeiro a sair. 
 4. Qual conteúdo você precisa praticar mais?
+5. tenho muita dificuldade de começar alguma coisa do zero, se tenho um um direção, acho o problema com mais facilidade.
 
 ## Desafio extra, se houver tempo
 Novo cenário de teste, resultado esperado e qual erro ele detecta:
